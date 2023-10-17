@@ -66,7 +66,7 @@ namespace Everyday
                         Console.Clear();
                         Console.WriteLine(data);
                     }
-                    else if (data.Date != new DateTime(2023, 10, 17))
+                    else if (data.Date != new DateTime(2023, 10, 20))
                     {
                         Console.Clear();
                         Console.WriteLine(data);
