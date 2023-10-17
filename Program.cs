@@ -66,6 +66,12 @@ namespace Everyday
                         Console.Clear();
                         Console.WriteLine(data);
                     }
+                    else if (data.Date != new DateTime(2023, 10, 17))
+                    {
+                        Console.Clear();
+                        Console.WriteLine(data);
+                    }
+
 
                     Console.SetCursorPosition(0, pos);
                     Console.WriteLine("->");
