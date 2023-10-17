@@ -1,4 +1,4 @@
-﻿
+
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Runtime.Serialization;
@@ -46,6 +46,16 @@ namespace Everyday
                         Console.WriteLine("  Покушать");
                         Console.WriteLine("  Помыться в ванне теплой");
                     }
+                    else if (data.Date == new DateTime(2023, 10, 20))
+                    {
+                        Console.Clear();
+                        Console.WriteLine(data);
+                        Console.WriteLine("Планы на день:");
+                        Console.WriteLine("  Пойти в gym");
+                        Console.WriteLine("  Поиграть в доту");
+                        Console.WriteLine("  Покакать");
+                        Console.WriteLine("  Погулять в парке");
+                    }
                     else if (data.Date != new DateTime(2023, 10, 19))
                     {
                         Console.Clear();
@@ -87,16 +97,6 @@ namespace Everyday
                         Console.WriteLine(data);
                     }
 
-
-
-
-
-
-
-
-
-
-
                 } while (key.Key != ConsoleKey.Enter);
 
 
@@ -132,6 +132,19 @@ namespace Everyday
 
 
                 }
+                else if (pos == 2 && data.Date == new DateTime(2023, 10, 20))
+                {
+                    Console.Clear();
+                    Dan day2 = new Dan();
+                    day2.name = ("Пойти в gym");
+                    day2.data = DateTime.Now;
+                    day2.opisanie = ("Позаниматься в gyme");
+                    Console.WriteLine(day2.name);
+                    Console.WriteLine("----------------------------------------------------------");
+                    Console.WriteLine("Описание:" + day2.opisanie);
+                    Console.WriteLine("----------------------------------------------------------");
+                    Console.WriteLine(data);
+                }
 
 
                 else if (pos == 3 && data.Date == new DateTime(2023, 10, 17))
@@ -163,6 +176,19 @@ namespace Everyday
                     Console.WriteLine("----------------------------------------------------------");
                     Console.WriteLine(data);
                 }
+                else if (pos == 3 && data.Date == new DateTime(2023, 10, 20))
+                {
+                    Console.Clear();
+                    Dan day2 = new Dan();
+                    day2.name = ("Поиграть в доту");
+                    day2.opisanie = ("Сыграть 2 катки в доту");
+                    day2.data = DateTime.Now;
+                    Console.WriteLine(day2.name);
+                    Console.WriteLine("----------------------------------------------------------");
+                    Console.WriteLine("Описание:" + day2.opisanie);
+                    Console.WriteLine("----------------------------------------------------------");
+                    Console.WriteLine(data);
+                }
                 else if (pos == 4 && data.Date == new DateTime(2023, 10, 17))
                 {
 
@@ -179,12 +205,25 @@ namespace Everyday
 
 
                 }
-                else if (pos == 4 && data.Date == new DateTime(2023, 10, 17))
+                else if (pos == 4 && data.Date == new DateTime(2023, 10, 19))
                 {
                     Console.Clear();
                     Dan day2 = new Dan();
                     day2.name = ("Покушать");
                     day2.opisanie = ("Покушать вкусно");
+                    day2.data = DateTime.Now;
+                    Console.WriteLine(day2.name);
+                    Console.WriteLine("----------------------------------------------------------");
+                    Console.WriteLine("Описание:" + day2.opisanie);
+                    Console.WriteLine("----------------------------------------------------------");
+                    Console.WriteLine(data);
+                }
+                else if (pos == 4 && data.Date == new DateTime(2023, 10, 20))
+                {
+                    Console.Clear();
+                    Dan day2 = new Dan();
+                    day2.name = ("Покакать");
+                    day2.opisanie = ("Пописить и какать");
                     day2.data = DateTime.Now;
                     Console.WriteLine(day2.name);
                     Console.WriteLine("----------------------------------------------------------");
@@ -207,6 +246,19 @@ namespace Everyday
                     Console.WriteLine(data);
 
 
+                }
+                else if (pos == 5 && data.Date == new DateTime(2023, 10, 20))
+                {
+                    Console.Clear();
+                    Dan day2 = new Dan();
+                    day2.name = ("Прогуляться");
+                    day2.opisanie = ("Погулять в парке");
+                    day2.data = DateTime.Now;
+                    Console.WriteLine(day2.name);
+                    Console.WriteLine("----------------------------------------------------------");
+                    Console.WriteLine("Описание:" + day2.opisanie);
+                    Console.WriteLine("----------------------------------------------------------");
+                    Console.WriteLine(data);
                 }
                 else if (pos == 5 && data.Date == new DateTime(2023, 10, 19))
                 {
